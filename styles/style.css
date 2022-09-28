@@ -160,7 +160,52 @@ min-width: 784px;
 /* Стили для блока "Цифры"*/
 
 /* Стили для блока "Метод Фейнмана"*/
+.feynman {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  background-image: url( "../images/feynman.png" );
+  background-repeat: no-repeat;
+  background-position: bottom left; 
 
+  border: 1px solid red; 
+}
+
+.freynman__title {
+margin: 100px auto 70px;
+padding: 0;
+width: 648px;
+justify-content: center;
+font-size: 120px;
+font-weight: 600;
+line-height: 1.15;
+text-align: center;
+}
+
+.freynman__subtitle {
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.freynman__link {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: #2f80ed;
+}
 /* Стили для блока "Принцип обучения от Кауфмана"*/
 
 /* Стили для блока "Подвал"*/
