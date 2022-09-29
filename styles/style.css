@@ -34,7 +34,7 @@
 
 /* Стили для блока "Шапка"*/
 .header {
-border: solid 1px red;
+/*border: 1px solid red;*/
 min-height: 600px;
 max-height: 756px;
 margin: 0;
@@ -158,6 +158,44 @@ min-width: 784px;
 }
 
 /* Стили для блока "Цифры"*/
+.section-title {
+  margin: 100px auto 20px;
+  padding: 0;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-subtitle {
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+}
+
+.table {  
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 1100px;
+  margin: 60px auto 100px;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  margin: 60px auto 0;
+  padding: 0;
+  width: 250px;
+  
+  display: inline-block;
+  border: 1px solid red;
+}
 
 /* Стили для блока "Метод Фейнмана"*/
 .feynman {
@@ -171,8 +209,7 @@ min-width: 784px;
   background-image: url( "../images/feynman.png" );
   background-repeat: no-repeat;
   background-position: bottom left; 
-
-  border: 1px solid red; 
+  /*border: 1px solid red;*/ 
 }
 
 .freynman__title {
@@ -209,3 +246,93 @@ text-align: center;
 /* Стили для блока "Принцип обучения от Кауфмана"*/
 
 /* Стили для блока "Подвал"*/
+
+.footer {
+  padding: 0;
+  margin: 0;
+  min-height: 350px;
+  display: flex;
+  background-color: #1f1f1f;
+  /*border: 1px solid red;*/
+
+}
+
+.footer__columns {
+/*border: 1px solid red;*/
+  width: 90%;
+  margin: 60px auto 40px;
+  padding: 0;
+  display: flex;
+  
+
+}
+
+.footer__columns_content_copyright {
+  padding: 0;
+  margin: 0;
+  min-height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 711px;
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+}
+.logo_plase_footer{
+  display: flex;
+  justify-content: flex-start;
+  width: 228px;
+  height: 32px;
+}
+
+.footer__autor {
+  margin: 18px 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  align-items: bottom;
+}
+
+.footer__columns_content_info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  padding: 0;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: bottom;
+  display: flex;
+  /*border: 1px solid red;*/
+}
+
+.footer__columns_content_social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer_social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  padding: 0;
+  align-self: center;
+}
