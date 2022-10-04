@@ -9,29 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-/* мой код, выше код который дал Яндекс */
-
 /* Стили для списков и заголовков/текстов"*/
 
 li {
@@ -57,9 +34,9 @@ a{
 
 /* Стили для блока "Шапка"*/
 .header {
-/*border: 1px solid red;*/
 min-height: 600px;
 max-height: 756px;
+height: 100vh;
 margin: 0;
 padding: 0;
 display: flex;
@@ -125,18 +102,15 @@ z-index: 1;
 }
 
 .two-columns {
+  width: 80%;
   margin: auto;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-self: center;
-  align-content: space-between;
-  width: 80%;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
-width: 175;
+width: 175px;
 color: #2f80ed;
 font-size: 18px;
 font-weight: normal;
@@ -198,7 +172,6 @@ min-width: 784px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*border: 1px solid red;*/
   width: 1100px;
 }
 
@@ -206,7 +179,6 @@ min-width: 784px;
   margin: 60px 0 0;
   box-sizing: border-box;
   width: 250px;
-  /*border: 1px solid red;*/
 }
 
 .table__heading {
@@ -237,7 +209,6 @@ min-width: 784px;
   background-image: url( "../images/feynman.png" );
   background-repeat: no-repeat;
   background-position: bottom left; 
-  /*border: 1px solid red;*/ 
 }
 
 .freynman__title {
@@ -275,7 +246,7 @@ text-align: center;
 
 .kaufman {
   margin: 0;
-  padding: 90px 0 80px;
+  padding: 90px 0;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -291,7 +262,6 @@ z-index: 1;
   margin: 80px 0 0;
   box-sizing: border-box;
   width: 200px;
-  /*border: 1px solid red;*/
   z-index: 1;
 }
 
@@ -308,86 +278,6 @@ z-index: 1;
   top: 0;
   z-index: 0;
 }
-/* Стили для блока "Подвал" - кривое, начнем заново*/
-
-/*.footer {
-  padding: 60px 0 40px;
-  min-height: 350px;
-  background-color: #1f1f1f;
-  border: 1px solid red;
-}
-
-
-.footer__columns {
-  border: 1px solid red;
-  width: 90%;
-  min-height: 250px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
- 
-  }
-
-.footer__columns_content_copyright {
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  align-items: space-between;
-  flex-basis: 711px;
-  border: 1px solid red;
-}
-
-.logo_plase_footer{
-  width: 228px;
-  height: 32px;
-
-}
-
-.footer__autor {
-  margin: 18px 0;
-  padding: 0;
-  color: #fff;
-  justify-self: bottom;
-}
-
-.footer__columns_content_info {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column-heading {
-  padding: 0;
-  margin: 0 0 20px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.footer__column-links {
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 30px;
-  text-align: bottom;
-  
- 
-}
-
-.footer__columns_content_social {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.footer_social-icon {
-  height: 16px;
-  width: 16px;
-  margin-right: 10px;
-  padding: 0;
-  align-self: center;
-}*/
 
 /* Стили для блока "Подвал"*/
 
@@ -396,7 +286,6 @@ z-index: 1;
   min-height: 350px;
   box-sizing: border-box;
   background-color: #1f1f1f;
-  border: 1px solid red;
 }
 
 .footer__columns {
@@ -405,7 +294,6 @@ z-index: 1;
   display: flex;
   width: 90%;
   height: 250px;
-  border: 1px solid red;
 }
 
 .footer__columns_content_copyright {
@@ -432,15 +320,21 @@ z-index: 1;
 }
 
 .footer__columns_content_info , .footer__columns_content_social {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
   color: #fff;
+  width: 125px;
 }
 
 .footer__column-links {
@@ -448,7 +342,7 @@ z-index: 1;
   margin: 20px 0 16px 0;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 125px;
   justify-self: left;
 }
 
