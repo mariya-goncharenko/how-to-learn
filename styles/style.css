@@ -308,53 +308,49 @@ z-index: 1;
   top: 0;
   z-index: 0;
 }
-/* Стили для блока "Подвал"*/
+/* Стили для блока "Подвал" - кривое, начнем заново*/
 
-.footer {
-  padding: 0;
-  margin: 0;
+/*.footer {
+  padding: 60px 0 40px;
   min-height: 350px;
   background-color: #1f1f1f;
   border: 1px solid red;
 }
 
+
 .footer__columns {
   border: 1px solid red;
   width: 90%;
-  margin: 60px auto 40px;
+  min-height: 250px;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  align-content: space-around;
+ 
   }
 
 .footer__columns_content_copyright {
   padding: 0;
   margin: 0;
-  min-height: 250px;
-  width: 50%;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: space-between;
+  flex-basis: 711px;
   border: 1px solid red;
 }
+
 .logo_plase_footer{
-  display: flex;
-  justify-content: flex-start;
   width: 228px;
   height: 32px;
+
 }
 
 .footer__autor {
   margin: 18px 0;
   padding: 0;
   color: #fff;
-  display: flex;
-  align-items: bottom;
+  justify-self: bottom;
 }
 
 .footer__columns_content_info {
-  margin: 0;
-  padding: 0;
-  width: 25%;
   display: flex;
   flex-direction: column;
 }
@@ -369,20 +365,16 @@ z-index: 1;
 }
 
 .footer__column-links {
-  padding: 0;
-  margin: 0;
   color: #fff;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
   text-align: bottom;
-  display: flex;
+  
  
 }
 
 .footer__columns_content_social {
-  margin: 0;
-  padding: 0;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -395,4 +387,82 @@ z-index: 1;
   margin-right: 10px;
   padding: 0;
   align-self: center;
+}*/
+
+/* Стили для блока "Подвал"*/
+
+.footer {
+  padding: 60px 0 40px;
+  min-height: 350px;
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+  border: 1px solid red;
+}
+
+.footer__columns {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  height: 250px;
+  border: 1px solid red;
+}
+
+.footer__columns_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_plase_footer{
+  width: 228px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__autor {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  padding: 0;
+  color: #fff;
+}
+
+.footer__columns_content_info , .footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #fff;
+}
+
+.footer__column-links {
+  padding: 0; 
+  margin: 20px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-self: left;
+}
+
+.footer__column-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.footer_social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  padding: 0;
 }
