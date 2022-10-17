@@ -7,11 +7,6 @@
     line-height: 34px;
   }
   
-  .two-columns__paragraph:nth-child(3) {
+  .two-columns__paragraph:last-child {
     margin: 0;
   }
-
-  .two-columns__paragraph:nth-child(4) {
-    margin: 0;
-  }
-  
